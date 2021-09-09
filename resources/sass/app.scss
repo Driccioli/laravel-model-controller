@@ -1,1 +1,19 @@
-//
+.movies{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.movie-card{
+    border: 1px solid black;
+    font-family: sans-serif;
+    padding: 15px;
+    width: calc(100%/3);
+    h3{
+        text-align: center;
+    }
+    ul{
+        list-style-type: none;
+    }
+}

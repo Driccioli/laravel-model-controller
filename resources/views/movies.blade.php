@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
-    @foreach ($movies as $movie)
-        <div class="movie-card">
-            <h3>{{$movie['title']}}</h3>
-            <ul>
-                <li>Original title: {{$movie['original_title']}}</li>
-                <li>Nationality: {{$movie['nationality']}}</li>
-                <li>Date of Release: {{$movie['date']}}</li>
-                <li>Rating: {{$movie['vote']}}</li>
-            </ul>
-        </div>
-        <hr>
-    @endforeach
+    <div class="movies">
+
+    
+        @foreach ($movies as $movie)
+            <div class="movie-card">
+                <h3>{{$movie['title']}}</h3>
+                <ul>
+                    <li>Original title: {{$movie['original_title']}}</li>
+                    <li>Nationality: {{$movie['nationality']}}</li>
+                    <li>Date of Release: {{$movie['date']}}</li>
+                    <li>Rating: {{$movie['vote']}}</li>
+                </ul>
+            </div>
+        @endforeach
+    </div>
 </body>
 </html>
